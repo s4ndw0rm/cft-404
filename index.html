@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Error 404 - Página no encontrada</title>
+  <title>Error 404 - Page Not Found</title>
   <style>
     body {
       background-color: #111;
@@ -20,6 +20,14 @@
       50% { opacity: 0.4; }
       100% { opacity: 1; }
     }
+    .hidden-flag {
+      color: #111; /* invisible against background */
+      transition: color 0.3s ease;
+      cursor: default;
+    }
+    .hidden-flag:hover {
+      color: #0f0; /* bright green on hover */
+    }
     a.hidden-link {
       color: #111;
       text-decoration: none;
@@ -28,12 +36,12 @@
 </head>
 <body>
   <h1 class="glitch">Error 404</h1>
-  <p>Esta página fue eliminada por razones desconocidas.</p>
-  <p>Algunos dicen que contenía información sensible...</p>
-  <p>¿Y si aún queda algo?</p>
-
-  <!-- FLAG{404_hidden_truth} -->
+  <p>This page was removed for unknown reasons.</p>
+  <p>Some say it once held sensitive information...</p>
+  <p>Others believe its secrets are still buried in the past.</p>
+  <p class="hidden-flag" >FLAG{archive_reveals_truth}</p>
 
   <p><a href="/ghost-path" class="hidden-link">.</a></p>
 </body>
+
 </html>
