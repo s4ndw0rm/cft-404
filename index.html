@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Error 404 - Página no encontrada</title>
+  <style>
+    body {
+      background-color: #111;
+      color: #eee;
+      font-family: 'Courier New', Courier, monospace;
+      text-align: center;
+      padding-top: 100px;
+    }
+    .glitch {
+      font-size: 2em;
+      animation: flicker 1s infinite;
+    }
+    @keyframes flicker {
+      0% { opacity: 1; }
+      50% { opacity: 0.4; }
+      100% { opacity: 1; }
+    }
+    a.hidden-link {
+      color: #111;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="glitch">Error 404</h1>
+  <p>Esta página fue eliminada por razones desconocidas.</p>
+  <p>Algunos dicen que contenía información sensible...</p>
+  <p>¿Y si aún queda algo?</p>
+
+  <!-- FLAG{404_hidden_truth} -->
+
+  <p><a href="/ghost-path" class="hidden-link">.</a></p>
+</body>
+</html>
